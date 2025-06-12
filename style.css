@@ -10,6 +10,7 @@ body {
     min-height: 100vh;
     padding: 20px;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 /* Container principal */
@@ -78,4 +79,12 @@ body {
 /* O GRANDE SEGREDO: Esconde o model-viewer da página */
 model-viewer {
     display: none;
+}
+
+.highlight-text {
+    display: block; /* Faz com que o texto ocupe uma nova linha */
+    margin-top: 1.5em; /* Adiciona um espaço acima para separar do resto do parágrafo */
+    font-weight: bold; /* Deixa o texto em negrito */
+    font-size: 1.1em; /* Aumenta um pouco o tamanho da fonte */
+    color: #d6336c; /* Usa a cor rosa principal do tema para destaque */
 }
