@@ -1,16 +1,20 @@
 /* Reset básico e configurações do corpo da página */
-body {
+html, body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden; /* A regra crucial, agora aplicada em ambos */
+}
+
+body {
     background-color: #fcefee;
-    color: #444;
+    color: #dd5959;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: 20px;
-    box-sizing: border-box;
-    overflow-x: hidden;
+    padding: 20px; /* Mantemos o padding para o conteúdo não colar nas bordas */
 }
 
 /* Container principal */
@@ -25,10 +29,10 @@ body {
 }
 
 /* Título Principal */
-.main-title {
-    font-family: 'Playfair Display', serif;
+.main-title { /* Se a classe do seu h1 for esta, ou use 'h1' */
+    font-family: 'Fredoka', cursive; /* Alterado para Fredoka */
     color: #d6336c;
-    font-size: 2.2em;
+    font-size: 2.5em; /* Aumentei um pouco para combinar com a nova fonte */
     margin-bottom: 25px;
 }
 
@@ -65,8 +69,9 @@ body {
     padding: 15px 30px;
     border-radius: 50px;
     text-decoration: none;
+    font-family: 'Fredoka', cursive;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1.2em;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 10px rgba(214, 51, 108, 0.4);
     border: none; /* Adicionado para botões */
