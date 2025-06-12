@@ -1,6 +1,5 @@
-// Inicializa o Swiper (carrossel)
+// --- LÓGICA DO CARROSSEL DE FOTOS (SWIPER) ---
 const swiper = new Swiper('.swiper-container', {
-    // Efeito do slide (pode ser 'slide', 'fade', 'cube', 'coverflow', 'flip')
     effect: 'coverflow',
     grabCursor: true,
     centeredSlides: true,
@@ -12,13 +11,19 @@ const swiper = new Swiper('.swiper-container', {
       modifier: 1,
       slideShadows: true,
     },
-
-    // Ativa o loop para as fotos ficarem passando continuamente
     loop: true,
-
-    // Adiciona a paginação (as bolinhas)
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
     },
+});
+
+
+// --- LÓGICA DA REALIDADE AUMENTADA (MODEL-VIEWER) ---
+const arButton = document.querySelector('#ar-button');
+const modelViewer = document.querySelector('#flower-viewer');
+
+arButton.addEventListener('click', () => {
+    // Ao clicar no botão, ativa o modo AR do model-viewer "invisível"
+    modelViewer.activateAR();
 });

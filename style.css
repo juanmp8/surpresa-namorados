@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #fcefee; /* Um tom de rosa/bege claro */
+    background-color: #fcefee;
     color: #444;
     display: flex;
     justify-content: center;
@@ -14,7 +14,7 @@ body {
 
 /* Container principal */
 .container {
-    max-width: 480px; /* Largura máxima para celulares maiores */
+    max-width: 480px;
     width: 100%;
     text-align: center;
     background-color: #fff;
@@ -23,34 +23,31 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo do Título Principal */
+/* Título Principal */
 .main-title {
     font-family: 'Playfair Display', serif;
-    color: #d6336c; /* Um tom de rosa escuro */
+    color: #d6336c;
     font-size: 2.2em;
     margin-bottom: 25px;
 }
 
-/* Estilo do Carrossel */
+/* Carrossel */
 .swiper-container {
     width: 100%;
-    height: 300px; /* Altura fixa para o carrossel */
+    height: 300px;
     margin-bottom: 30px;
     border-radius: 10px;
 }
-
 .swiper-slide img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Garante que a imagem cubra o slide sem distorcer */
+    object-fit: cover;
 }
-
-/* Cor da paginação (bolinhas) */
 .swiper-pagination-bullet-active {
     background-color: #d6336c !important;
 }
 
-/* Estilo do seu texto pessoal */
+/* Texto pessoal */
 .love-text {
     font-size: 1.1em;
     line-height: 1.6;
@@ -59,7 +56,7 @@ body {
     margin-bottom: 30px;
 }
 
-/* Estilo do Botão para a surpresa */
+/* Botão de AR */
 .ar-button {
     display: inline-block;
     background: linear-gradient(45deg, #d6336c, #f7679a);
@@ -71,9 +68,14 @@ body {
     font-size: 1.1em;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 10px rgba(214, 51, 108, 0.4);
+    border: none; /* Adicionado para botões */
+    cursor: pointer; /* Adicionado para botões */
 }
-
 .ar-button:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(214, 51, 108, 0.5);
+}
+
+/* O GRANDE SEGREDO: Esconde o model-viewer da página */
+model-viewer {
+    display: none;
 }

@@ -17,7 +17,7 @@
 
     <main class="container">
 
-        <h1 class="main-title">Feliz Dia dos Namorados, Meu Amor!</h1>
+        <h1>Feliz Dia dos Namorados, Meu Amor!</h1>
 
         <div class="swiper-container">
             <div class="swiper-wrapper">
@@ -25,7 +25,7 @@
                 <div class="swiper-slide"><img src="imagens/foto2.JPEG" alt="Foto de nós dois 2"></div>
                 <div class="swiper-slide"><img src="imagens/foto3.JPEG" alt="Foto de nós dois 3"></div>
                 <div class="swiper-slide"><img src="imagens/foto4.JPEG" alt="Foto de nós dois 4"></div>
-                </div>
+            </div>
             <div class="swiper-pagination"></div>
         </div>
 
@@ -33,14 +33,26 @@
             Oficialmente nosso primeiro dia dos namorados juntos, tenho certeza que será o primeiro de muitos que ainda virão, obrigado por esses quase 2 anos juntos e por ser essa mulher incrível na minha vida, desde que você chegou eu venho me tornando uma pessoa melhor a cada dia, apesar de todos os problemas e dificuldades nosso amor se completa e tenho certeza que quero viver uma vida com você. Eu te amo de mais e Feliz dia dos namorados!
         </p>
 
-        <a href="https://juanmp8.github.io/surpresa-namorados-ar/" class="ar-button">
+        <button id="ar-button" class="ar-button">
             Clique aqui para uma surpresa!
-        </a>
+        </button>
 
     </main>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <model-viewer
+        id="flower-viewer"
+        src="./assets/bouquet.glb"
+        ios-src="./assets/Bouquet.usdz"
+        alt="Um buquê de flores animado"
+        ar
+        ar-modes="webxr scene-viewer quick-look"
+        camera-controls
+        shadow-intensity="1"
+        animation-name="*">
+    </model-viewer>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
